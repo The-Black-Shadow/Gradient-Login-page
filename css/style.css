@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,10 +9,10 @@ body{
     min-height: 100vh;
     background: #000;
     font-family: 'Langar',
-    cursive;
+        cursive;
 }
 
-.container{
+.container {
     position: relative;
     width: 450px;
     min-height: 300px;
@@ -20,7 +20,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
 }
 
-.container:before{
+.container:before {
     content: '';
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@ body{
     pointer-events: none;
 }
 
-.container:after{
+.container:after {
     content: '';
     position: absolute;
     top: -5px;
@@ -43,17 +43,18 @@ body{
     animation: animate 10s linear infinite;
 }
 
-@keyframes animate{
+@keyframes animate {
 
-    0%{
+    0% {
         filter: blur(60px) hue-rotate(0deg);
     }
-    100%{
+
+    100% {
         filter: blur(60px) hue-rotate(360deg);
     }
 }
 
-.form{
+.form {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -62,19 +63,19 @@ body{
     z-index: 1;
 }
 
-.form h2{
+.form h2 {
     margin: 0;
     padding: 0;
     color: #fff;
     font-size: 24px;
 }
 
-.form .inputBox{
+.form .inputBox {
     width: 100%;
     margin-top: 20px;
 }
 
-.form .inputBox input{
+.form .inputBox input {
     width: 100%;
     background: transparent;
     border: none;
@@ -83,15 +84,15 @@ body{
     font-size: 18px;
     color: #fff;
     padding: 5px 0;
-    ffont-family: 'Langar',
-    cursive;
+    font-family: 'Langar',
+        cursive;
 }
 
-::placeholder{
+::placeholder {
     color: rgb(12, 233, 233);
 }
 
-.form .inputBox input[type="submit"]{
+.form .inputBox input[type="submit"] {
     background: #fff;
     color: #000;
     border: none;
@@ -100,13 +101,13 @@ body{
     max-width: 100px;
     cursor: pointer;
     font-family: 'Langar',
-    cursive;
+        cursive;
 }
 
-.form p{
+.form p {
     color: #eee;
 }
 
-.form p a{
+.form p a {
     color: #fff;
 }
